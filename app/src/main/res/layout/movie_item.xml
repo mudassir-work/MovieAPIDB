@@ -1,0 +1,171 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.example.database_recycler.database.Movie" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!-- Movie Name -->
+            <TextView
+                android:id="@+id/movieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+            <!-- Delete Button -->
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Delete Movie"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+
+
+        <!-- Movie Details (Initially Hidden) -->
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/releaseYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Year: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cast: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Story: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:textSize="14sp" />
+
+            <!-- Poster Image -->
+            <ImageView
+                android:id="@+id/moviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" /> <!-- Initially Hidden -->
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        &lt;!&ndash; Movie Name &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/movieName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        &lt;!&ndash; Movie Details (Initially Hidden) &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/detailsLayout"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:paddingTop="8dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/releaseYear"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Release Year: "-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/cast"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cast: "-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/story"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Story: "-->
+<!--                android:textSize="14sp" />-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:padding="8dp">-->
+
+    <!--    &lt;!&ndash; Movie Name TextView &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/movieName"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Movie Name"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    &lt;!&ndash; Release Year TextView &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/releaseYear"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Release Year"-->
+    <!--        android:textSize="16sp" />-->
+
+    <!--    &lt;!&ndash; Cast TextView &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/cast"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Cast"-->
+    <!--        android:textSize="14sp" />-->
+    <!--</LinearLayout>-->

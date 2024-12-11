@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage2">
+
+    <TextView
+        android:id="@+id/movieDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Movie Details"
+
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/releaseYearInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/nameInput"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:hint="Release Year"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/movieDetails"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/white"
+        android:hint="Movie Name"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/castInput"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#4184F3"
+        android:padding="12dp"
+        android:text="Add Movie"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/castInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/releaseYearInput"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        android:hint="Cast"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="16dp"
+        />
+
+</RelativeLayout>

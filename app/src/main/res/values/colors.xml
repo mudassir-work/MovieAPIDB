@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="blue">#3F51B5</color> <!-- Used for the Login Button Background -->
+    <color name="white">#FFFFFF</color> <!-- Used for text on the Login Button -->
+
+    <!-- Background Colors -->
+    <color name="login_background">#F5F5F5</color> <!-- Background color for the login screen -->
+
+    <!-- Text Colors -->
+    <color name="black">#000000</color> <!-- General black text color -->
+    <color name="gray">#808080</color> <!-- For hints in input fields (if needed) -->
+
+    <!-- Accent Colors -->
+    <color name="red">#FF5722</color> <!-- Example color for error or warnings -->
+    <color name="green">#4CAF50</color> <!-- Example color for success messages -->
+</resources>

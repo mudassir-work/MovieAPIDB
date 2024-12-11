@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961983976269",
+    "project_id": "database-d4441",
+    "storage_bucket": "database-d4441.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961983976269:android:d7bfd4b0d311d6d3281d04",
+        "android_client_info": {
+          "package_name": "com.example.database_recycler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXw4NkOLU84Z-fN9ozv-5YrQsbLcuwp0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
